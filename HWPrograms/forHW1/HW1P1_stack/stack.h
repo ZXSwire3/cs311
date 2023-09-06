@@ -8,9 +8,9 @@
 
 // =======================================================
 // HW#: HW1P1 stack
-// Your name: **
+// Your name: Ben Foltz-Miranda
 // Compiler:  g++ 
-// File type: headher file stack.h
+// File type: header file stack.h
 //=======================================================
 
 //----- Globally setting up the aliases ----------------
@@ -18,7 +18,7 @@
 const int MAX = 10;   // The MAX number of elements for the stack
                       // MAX is unknown to the client
 
-typedef ** el_t;      // the el_t type is ** for now
+typedef char el_t;      // the el_t type is char for now
                       // el_t is unknown to the client
 //-------------------------------------------------------
 
@@ -33,10 +33,9 @@ class stack
 
  public:  // available to the client
   
-  // Add exception handling classes here  
-   **
-   class overflow();
-   class underflow();
+  // Add exception handling classes here
+   class overflow{};
+   class underflow{};
   
   // prototypes to be used by the client
   // Note that no parameter variables are given
@@ -56,24 +55,25 @@ class stack
   
   // PURPOSE: if not empty, gives the top element without removing it;
   //          otherwise, throws an exception - Underflow
-  // PARAMETER: **
+  // PARAMETER: provide variable to receive the top element (by ref)
   void topElem(el_t&);
   
   // ** Must add good comments for each function - See Notes2A
 
-  //PURPOSE: **
+  //PURPOSE: checks top and returns true if empty, false otherwise.
+  //         empty is defined as top == -1.
   bool isEmpty();
 
-  //PURPOSE: **
+  //PURPOSE: checks top and returns true if full, false otherwise.
+  //         full is defined as top == MAX-1.
   bool isFull();
 
-  //PURPOSE: **
+  //PURPOSE: calls isEmpty and if true, displays [ empty ].
+  //         Otherwise, displays the elements vertically.
   void displayAll();
 
-  //PURPOSE: **
+  //PURPOSE: pops all elements from the stack to make it empty if it is not empty yet.
   void clearIt();
-  
 };  
 
 // Note: semicolon is needed at the end of the header file
-
