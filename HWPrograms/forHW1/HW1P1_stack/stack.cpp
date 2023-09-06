@@ -88,7 +88,7 @@ void stack::displayAll() {
     if (isEmpty()) {
         cout << "[ empty ]" << endl;
     } else {
-        for (int i = top; i > 0; i--) {
+        for (int i = top; i > -1; i--) {
             cout << el[i] << endl;
         }
         cout << "--------------" << endl;
