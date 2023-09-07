@@ -1,0 +1,39 @@
+Script started on Thu Sep  7 11:32:43 2023
+]0;foltz001@empress:~/cs311/HWPrograms/forHW1/HW1P1_stack[?1034h[foltz001@empress HW1P1_stack]$ g++ stack.cpp client1.cpp 
+]0;foltz001@empress:~/cs311/HWPrograms/forHW1/HW1P1_stack[foltz001@empress HW1P1_stack]$ ./a.out 
+type a postfix expression: 34+
+Result: 7
+Type 'quit' to exit the program.
+
+type a postfix expression: 345+*
+Result: 27
+Type 'quit' to exit the program.
+
+type a postfix expression: 722+-
+Result: 3
+Type 'quit' to exit the program.
+
+type a postfix expression: 34+56++
+Result: 18
+Type 'quit' to exit the program.
+
+type a postfix expression: 12+34*45+-+
+Result: 6
+Type 'quit' to exit the program.
+
+type a postfix expression: 1234567891234
+Error: Expression too long.
+type a postfix expression: +
+Error: Too few operands/numbers.
+type a postfix expression: 3+
+Error: Too few operands/numbers.
+type a postfix expression: 3#
+Error: Invalid item.
+type a postfix expression: 2345+
+Result: 9
+Error: Incomplete expression.
+type a postfix expression: quit
+]0;foltz001@empress:~/cs311/HWPrograms/forHW1/HW1P1_stack[foltz001@empress HW1P1_stack]$ exit
+exit
+
+Script done on Thu Sep  7 11:34:42 2023
