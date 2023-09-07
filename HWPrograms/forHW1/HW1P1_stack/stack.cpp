@@ -100,7 +100,8 @@ void stack::displayAll() {
 // it is empty using a while loop
 void stack::clearIt() {
     el_t temp;  // ** comment a local variable here
-    while (isFull()) { // do not do top = -1, use a while loop
+    // do not do top = -1, use a while loop
+    while (!isEmpty()) { // while the stack is not empty
         pop(temp);
     }
 }
