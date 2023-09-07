@@ -7,7 +7,7 @@
 //HW#: HW1P2 queue
 //Your name: Ben Foltz-Miranda
 //Complier:  g++
-//File type: source/implementation  queue.cpp
+//File type: queue source/implementation file queue.cpp
 //===========================================================
 
 using namespace std;
