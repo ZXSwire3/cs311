@@ -17,8 +17,16 @@ using namespace std;
 #include <string>
 #include "stack.h"
 
-//Purpose of the program: **
-//Algorithm: **
+//Purpose of the program:
+// This program evaluates postfix expressions.
+// It takes a postfix expression from the user and evaluates it.
+// Algorithm: while loop with a try-catch block inside
+// loop through each character in the expression
+// if the character is an operand, push it onto the stack
+// if the character is an operator, pop the first two operands and perform the operation on them
+// if the character is not an operand or operator, throw an exception
+// after the loop, pop the result and display it
+// if anything is left on the stack, the expression is incomplete, so throw an exception
 
 int main() {
     stack postfixstack;  // integer stack
@@ -38,17 +46,30 @@ int main() {
         try {
             item = expression[i];  // current char
 
-            // ** do all the steps in the algorithm given in Notes-2A
-
-
+            // do all the steps in the algorithm given in Notes-2A
+            if (item >= '0' && item <= '9') { // if item is an operand (number)
+                postfixstack.push(int(item) - 48);
+            } else if (item == '*' || item == '+' || item == '-') { // if item is an operator
+                postfixstack.pop(box1); // pop the first operand
+                postfixstack.pop(box2); // pop the second operand
+                if (item == '*') { // if item is multiplication
+                    postfixstack.push(box2 * box1);
+                } else if (item == '+') { // if item is addition
+                    postfixstack.push(box2 + box1);
+                } else if (item == '-') { // if item is subtraction
+                    postfixstack.push(box2 - box1);
+                }
+            } else { // if item is not an operand or operator
+                throw "Invalid item.";
+            }
         } // this closes try
             // Catch exceptions and report problems and quit the program now (exit(1)).
             // Error messages describe what is wrong with the expression.
-        catch (stack::Overflow) {
+        catch (stack::Overflow) { // for too many operands case
             cout << "Error: Expression too long." << endl;
             exit(1);
         }
-        catch (stack::Underflow) {
+        catch (stack::Underflow) { // for too few operands/numbers case
             cout << "Error: Too few operands/numbers." << endl;
             exit(1);
         }
@@ -65,11 +86,11 @@ int main() {
     // After the loop successfully completes:
     // Pop the result and show it.
     postfixstack.pop(box1);
+    cout << "Result: " << box1 << endl;
     // If anything is left on the stack, an incomplete expression
     // was found so also inform the user.
     if (!postfixstack.isEmpty()) {
         cout << "Error: Incomplete expression." << endl;
         exit(1);
     }
-
 }// end of the program
