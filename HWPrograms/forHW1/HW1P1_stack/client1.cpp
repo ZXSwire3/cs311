@@ -32,79 +32,65 @@ int main() {
     stack postfixstack;  // integer stack
     string expression;   // user entered expression
 
-    while (true) { // loop until the user enters "quit"
-        beginning:
+    cout << "type a postfix expression: ";
+    cin >> expression;
 
-        cout << "type a postfix expression: ";
-        cin >> expression;
+    int i = 0;  // character position within expression
+    char item;  // one char out of the expression
 
-        int i = 0;  // character position within expression
-        char item;  // one char out of the expression
+    int box1;  // receive things from pop
+    int box2;  // receive things from pop
 
-        int box1;  // receive things from pop
-        int box2;  // receive things from pop
+    while (expression[i] != '\0') // til the end of the expression
+    {
+        try {
+            item = expression[i];  // current char
 
-        if (expression == "quit") { // if the user enters "quit", exit the program
+            // do all the steps in the algorithm given in Notes-2A
+            if (item >= '0' && item <= '9') { // if item is an operand (number)
+                postfixstack.push(int(item) - 48);
+            } else if (item == '*' || item == '+' || item == '-') { // if item is an operator
+                postfixstack.pop(box1); // pop the first operand
+                postfixstack.pop(box2); // pop the second operand
+                if (item == '*') { // if item is multiplication
+                    postfixstack.push(box2 * box1);
+                } else if (item == '+') { // if item is addition
+                    postfixstack.push(box2 + box1);
+                } else if (item == '-') { // if item is subtraction
+                    postfixstack.push(box2 - box1);
+                }
+            } else { // if item is not an operand or operator
+                throw "Invalid item.";
+            }
+        } // this closes try
+            // Catch exceptions and report problems and quit the program now (exit(1)).
+            // Error messages describe what is wrong with the expression.
+        catch (stack::Overflow) { // for too many operands case
+            cout << "Error: Expression too long." << endl;
+            exit(1);
+        }
+        catch (stack::Underflow) { // for too few operands/numbers case
+            cout << "Error: Too few operands/numbers." << endl;
+            exit(1);
+        }
+        catch (char const *errormsg) // for invalid item case
+        {
+            cout << "Error: Invalid item." << endl;
             exit(1);
         }
 
-        while (expression[i] != '\0') // til the end of the expression
-        {
-            try {
-                item = expression[i];  // current char
+        // go back to the loop after incrementing i
+        i++;
+    }// end of while
 
-                // do all the steps in the algorithm given in Notes-2A
-                if (item >= '0' && item <= '9') { // if item is an operand (number)
-                    postfixstack.push(int(item) - 48);
-                } else if (item == '*' || item == '+' || item == '-') { // if item is an operator
-                    postfixstack.pop(box1); // pop the first operand
-                    postfixstack.pop(box2); // pop the second operand
-                    if (item == '*') { // if item is multiplication
-                        postfixstack.push(box2 * box1);
-                    } else if (item == '+') { // if item is addition
-                        postfixstack.push(box2 + box1);
-                    } else if (item == '-') { // if item is subtraction
-                        postfixstack.push(box2 - box1);
-                    }
-                } else { // if item is not an operand or operator
-                    throw "Invalid item.";
-                }
-            } // this closes try
-                // Catch exceptions and report problems and quit the program now (exit(1)).
-                // Error messages describe what is wrong with the expression.
-            catch (stack::Overflow) { // for too many operands case
-                cout << "Error: Expression too long." << endl;
-                postfixstack.clearIt();
-                goto beginning; // go back to the beginning of the loop
-            }
-            catch (stack::Underflow) { // for too few operands/numbers case
-                cout << "Error: Too few operands/numbers." << endl;
-                postfixstack.clearIt();
-                goto beginning; // go back to the beginning of the loop
-            }
-            catch (char const *errormsg) // for invalid item case
-            {
-                cout << "Error: Invalid item." << endl;
-                postfixstack.clearIt();
-                goto beginning; // go back to the beginning of the loop
-            }
-
-            // go back to the loop after incrementing i
-            i++;
-        }// end of while
-
-        // After the loop successfully completes:
-        // Pop the result and show it.
-        postfixstack.pop(box1);
-        cout << "Result: " << box1 << endl;
-        // If anything is left on the stack, an incomplete expression
-        // was found so also inform the user.
-        if (!postfixstack.isEmpty()) {
-            cout << "Error: Incomplete expression." << endl;
-            postfixstack.clearIt();
-            continue;
-        }
-
-        cout << "Type 'quit' to exit the program." << endl << endl;
+    // After the loop successfully completes:
+    // Pop the result and show it.
+    postfixstack.pop(box1);
+    cout << "Result: " << box1 << endl;
+    // If anything is left on the stack, an incomplete expression
+    // was found so also inform the user.
+    if (!postfixstack.isEmpty()) {
+        cout << "Error: Incomplete expression." << endl;
+        exit(1);
     }
 }// end of the program
