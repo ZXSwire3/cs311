@@ -19,7 +19,7 @@ using namespace std;
 typedef string el_t;          // el_t is an alias for the data type
 // el_t is unknown to the client  
 
-const int MAX_SIZE = 10;  // this is the max number of elements - need to change it to 50 for client2.
+const int MAX_SIZE = 50;  // this is the max number of elements - need to change it to 50 for client2.
 // MAX_SIZE is unknown to the client
 //-------------------------------------------------------
 
