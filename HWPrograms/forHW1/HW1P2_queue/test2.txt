@@ -1,0 +1,32 @@
+Script started on Tue 12 Sep 2023 05:10:14 PM PDT
+]0;foltz001@empress:~/cs311/HWPrograms/forHW1/HW1P2_queue[foltz001@empress HW1P2_queue]$ g++ queue.cpp cleiient2.cpp 
+]0;foltz001@empress:~/cs311/HWPrograms/forHW1/HW1P2_queue[foltz001@empress HW1P2_queue]$ ./a.out 
+A
+B
+C
+AA
+AB
+AC
+BA
+BB
+BC
+CA
+CB
+CC
+AAA
+AAB
+AAC
+ABA
+ABB
+ABC
+ACA
+ACB
+ACC
+BAA
+BAB
+BAC
+Cannot add
+]0;foltz001@empress:~/cs311/HWPrograms/forHW1/HW1P2_queue[foltz001@empress HW1P2_queue]$ exit
+exit
+
+Script done on Tue 12 Sep 2023 05:10:50 PM PDT
