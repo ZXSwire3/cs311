@@ -45,11 +45,11 @@ int main() {
             queue.add(currentString + "C"); // add C to currentString and add to queue
 
         } catch (queue::Overflow) { // if there is an overflow, the queue is full, so exit the program
-            cout << "Cannot add";
+            cout << "Cannot add" << endl;
             exit(1);
         }
         catch (queue::Underflow) { // if there is an underflow, the queue is empty, so exit the program
-            cout << "Cannot remove";
+            cout << "Cannot remove" << endl;
             exit(1);
         }
     }// end of loop
