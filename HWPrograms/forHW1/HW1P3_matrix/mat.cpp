@@ -61,7 +61,7 @@ void showVector(vector<char> v, ostream &ost) {
     else {
         // show the content of v separated by blanks
         for (int i = 0; i < v.size(); ++i) { // loop through every char in the vector
-            ost << i << " ";
+            ost << v[i] << " ";
         }
     }
 }
