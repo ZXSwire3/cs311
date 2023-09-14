@@ -1,0 +1,12 @@
+Script started on Wed 13 Sep 2023 09:44:11 PM PDT
+]0;foltz001@empress:~/cs311/HWPrograms/forHW1/HW1P3_matrix[?1034h[foltz001@empress HW1P3_matrix]$ g++ mat.cpp 
+]0;foltz001@empress:~/cs311/HWPrograms/forHW1/HW1P3_matrix[foltz001@empress HW1P3_matrix]$ ./a.out 
+reading from lines.txt
+0:a b c |b e f |- - - |- - - |
+1:- - - |- - - |c h i |- - - |
+2:- - - |- - - |- - - |d k l |
+saving the table in table.txt
+]0;foltz001@empress:~/cs311/HWPrograms/forHW1/HW1P3_matrix[foltz001@empress HW1P3_matrix]$ exit
+exit
+
+Script done on Wed 13 Sep 2023 09:44:30 PM PDT
