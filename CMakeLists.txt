@@ -37,3 +37,6 @@ add_executable(HW1P2_queue_client2
         HWPrograms/forHW1/HW1P2_queue/queue.cpp
         HWPrograms/forHW1/HW1P2_queue/queue.h
         HWPrograms/forHW1/HW1P2_queue/client2.cpp)
+#HW1P3_matrix
+add_executable(HW1P3_matrix
+        HWPrograms/forHW1/HW1P3_matrix/mat.cpp)
