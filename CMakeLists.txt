@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.26)
 project(cs311)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 98)
 
 include_directories(DemoPrograms/OOP-Demo/1-FriendFunction)
 include_directories(DemoPrograms/OOP-Demo/2-References)
