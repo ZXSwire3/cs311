@@ -1,6 +1,7 @@
 using namespace std;
 
 #include <iostream>
+#include <math.h>
 // CS311 YOSHII F23 binsearch.cpp
 // The Algorithm is in Notes-4A so copy and paste it here!!!!!
 // On Empress, control-rightclick will bring up the paste option.
