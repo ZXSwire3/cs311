@@ -40,3 +40,6 @@ add_executable(HW1P2_queue_client2
 #HW1P3_matrix
 add_executable(HW1P3_matrix
         HWPrograms/forHW1/HW1P3_matrix/mat.cpp)
+#HW2P1_search
+add_executable(HW2P1_search
+        HWPrograms/forHW2/HW2P1_search/binsearch.cpp)
