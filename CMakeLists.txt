@@ -43,3 +43,8 @@ add_executable(HW1P3_matrix
 #HW2P1_search
 add_executable(HW2P1_search
         HWPrograms/forHW2/HW2P1_search/binsearch.cpp)
+#HW2P2_sort
+add_executable(HW2P2_partition
+        HWPrograms/forHW2/HW2P2_sort/partition.cpp)
+add_executable(HW2P2_combine
+        HWPrograms/forHW2/HW2P2_sort/combine.cpp)
