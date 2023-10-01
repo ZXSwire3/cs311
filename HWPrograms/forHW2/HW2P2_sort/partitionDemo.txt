@@ -31,21 +31,6 @@ Results...
 1765432|8
 ]0;foltz001@empress:~/cs311/HWPrograms/forHW2/HW2P2_sort[foltz001@empress HW2P2_sort]$ ./hw2partitionDemo.out 
 Partition Demo by Yoshii
-How many elements? (must be less than 10) 5
-Enter elements one per line..
-^C
-]0;foltz001@empress:~/cs311/HWPrograms/forHW2/HW2P2_sort[foltz001@empress HW2P2_sort]$ ./hw2partitionDemo.out 
-Partition Demo by Yoshii
-How many elements? (must be less than 10) 8
-Enter elements one per line..
-5
-1
-4
-3
-66
-^C
-]0;foltz001@empress:~/cs311/HWPrograms/forHW2/HW2P2_sort[foltz001@empress HW2P2_sort]$ ./hw2partitionDemo.out 
-Partition Demo by Yoshii
 How many elements? (must be less than 10) 8
 Enter elements one per line..
 5
