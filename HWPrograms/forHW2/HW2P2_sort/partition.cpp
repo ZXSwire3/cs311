@@ -35,6 +35,7 @@ int partition(int a[], int f, int r) {
         }
         //    if both are bad, swap and then move
         if (small <= large) {
+            cout << "swap " << a[small] << " and " << a[large] << endl; // display the values being swapped
             int temp = a[small]; // temp to hold the smaller
             a[small] = a[large]; // swap
             a[large] = temp; // swap
