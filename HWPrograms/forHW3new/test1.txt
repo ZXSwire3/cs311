@@ -1,0 +1,68 @@
+Script started on Thu 05 Oct 2023 02:32:55 PM PDT
+]0;foltz001@empress:~/cs311/HWPrograms/forHW3new[?1034h[foltz001@empress forHW3new]$ g++ HW3P1client.cpp llist.cpp
+]0;foltz001@empress:~/cs311/HWPrograms/forHW3new[foltz001@empress forHW3new]$ ./a.out 
+
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+    Enter ( 0 ) to quit 
+===>1
+Case 1: Basic Functions --------------
+calling the llist constructor...
+
+Step 1: check empty and report the result, should be 1 (true)
+1
+
+Step 2: display the list
+[ empty ]
+
+Step 3: add 4 integers 1,2,3,4 to rear
+
+Step 4: display the list
+[ 1 2 3 4 ]
+
+Step 5: remove from front twice (and display the elements removed)
+Removed: 1
+Removed: 2
+
+Step 6: display the list
+[ 3 4 ]
+
+Step 7: check empty and report the result, should be 0 (false)
+0
+
+Step 8: remove from the rear twice (display the element removed)
+Removed: 4
+Removed: 3
+
+Step 9: check empty and report the result, should be 1 (true)
+1
+
+Step 10: Add to front 4 times 9,8,6,5
+
+Step 11: display the list
+[ 5 6 8 9 ]
+
+Step 12: remove from the rear 4 times (display the element removed)
+Removed: 9
+Removed: 8
+Removed: 6
+Removed: 5
+
+Step 13: display the list
+[ empty ]
+calling the llist destructor...
+
+MENU: These are your options: 
+
+   (1) Case 1  
+   (2) Case 2  
+   (3) Case 3  
+    Enter ( 0 ) to quit 
+===>0
+]0;foltz001@empress:~/cs311/HWPrograms/forHW3new[foltz001@empress forHW3new]$ exit
+exit
+
+Script done on Thu 05 Oct 2023 02:33:32 PM PDT
