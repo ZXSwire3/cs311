@@ -6,7 +6,7 @@
 
 // =======================================================
 // HW#: HW3P1 llist
-// Your name: **
+// Your name: Ben Foltz-Miranda
 // Compiler:  g++ 
 // File type: headher file  llist.h
 //=======================================================
@@ -15,65 +15,66 @@
 typedef int el_t;  // int for now but can change later
 
 //a list node is defined here as a struct Node for now
-struct Node
-{
-  el_t Elem;   // elem is the element stored
-  Node *Next;  // next is the pointer to the next node
+struct Node {
+    el_t Elem;   // elem is the element stored
+    Node *Next;  // next is the pointer to the next node
 };
 //---------------------------------------------------------
 
-class llist
-{
-  
- private:
-  Node *Front;       // pointer to the front node
-  Node *Rear;        // pointer to the rear node
-  int  Count;        // counter for the number of nodes
+class llist {
 
-  // untility function to move to a specified node position
- /  void moveTo(int, Node*&);
-  
- public:
+private:
+    Node *Front;       // pointer to the front node
+    Node *Rear;        // pointer to the rear node
+    int Count;        // counter for the number of nodes
 
-  // Exception handling classes 
-  class Underflow{};
-  class OutOfRange{};  // thrown when the specified Node is out of range
+    // utility function to move to a specified node position
 
-  llist ();     // constructor to create a list object
-  ~llist();     // destructor to destroy all nodes
-  
-  //**
-  bool isEmpty();
-    
-  //**
-  void displayAll();
+    void moveTo(int, Node *&);
 
-  //**
-  void addFront(el_t);
-    
-  //**
-  void addRear(el_t);
+public:
 
-  //**
-  void deleteFront(el_t&);
-  
-    
-  //**
-  void deleteRear(el_t&);
+    // Exception handling classes
+    class Underflow {
+    }; // thrown when an element is requested to be deleted but the list is empty
 
-  //---------------------------------------
+    class OutOfRange {
+    }; // thrown when the specified Node is out of range
+
+    llist();     // constructor to create a list object
+    ~llist();     // destructor to destroy all nodes
+
+    // Checks if the list is empty
+    bool isEmpty();
+
+    // Displays all the elements in the list
+    void displayAll();
+
+    // Adds a new element to the front of the list
+    void addFront(el_t);
+
+    // Adds a new element to the rear of the list
+    void addRear(el_t);
+
+    // Deletes the front element of the list
+    void deleteFront(el_t &);
 
 
-  //**
-  void deleteIth(int, el_t&);  // calls moveTo
+    // Deletes the rear element of the list
+    void deleteRear(el_t &);
 
-  //**    
-  void insertIth(int, el_t);   // calls moveTo
+    //---------------------------------------
 
-  //Copy Constructor to allow pass by value and return by value of a llist
-  llist(const llist&);
-  
-  //Overloading of = (returns a reference to a llist)
-  llist& operator=(const llist&); 
 
+    // Deletes a element at the Ith position of the list
+    void deleteIth(int, el_t &);  // calls moveTo
+
+    // Adds a new element to the Ith position of the list
+    void insertIth(int, el_t);   // calls moveTo
+
+    // Copy Constructor to allow pass by value and return by value of a llist
+    llist(const llist &);
+
+    // Overloading of = (returns a reference to a llist)
+    llist &operator=(const llist &);
 };
