@@ -1,5 +1,5 @@
-Script started on Thu 05 Oct 2023 02:32:55 PM PDT
-]0;foltz001@empress:~/cs311/HWPrograms/forHW3new[?1034h[foltz001@empress forHW3new]$ g++ HW3P1client.cpp llist.cpp
+Script started on Thu 05 Oct 2023 04:37:44 PM PDT
+]0;foltz001@empress:~/cs311/HWPrograms/forHW3new[?1034h[foltz001@empress forHW3new]$ g++ HW3P1client.cpp llist.cpp
 ]0;foltz001@empress:~/cs311/HWPrograms/forHW3new[foltz001@empress forHW3new]$ ./a.out 
 
 MENU: These are your options: 
@@ -65,4 +65,4 @@ MENU: These are your options:
 ]0;foltz001@empress:~/cs311/HWPrograms/forHW3new[foltz001@empress forHW3new]$ exit
 exit
 
-Script done on Thu 05 Oct 2023 02:33:32 PM PDT
+Script done on Thu 05 Oct 2023 04:38:10 PM PDT
