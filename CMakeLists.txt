@@ -19,6 +19,7 @@ include_directories(HWPrograms/forHW5)
 include_directories(HWPrograms/forHW6)
 include_directories(HWPrograms/forHW8)
 
+#[[
 #HW1P1_stack
 add_executable(HW1P1_stack_stacktest
         HWPrograms/forHW1/HW1P1_stack/stack.cpp
@@ -48,3 +49,19 @@ add_executable(HW2P2_partition
         HWPrograms/forHW2/HW2P2_sort/partition.cpp)
 add_executable(HW2P2_combine
         HWPrograms/forHW2/HW2P2_sort/combine.cpp)
+#HW3P1_Demos
+add_executable(equalstest
+        HWPrograms/forHW3new/HW3demos/equalstest.cpp
+        HWPrograms/forHW3new/HW3demos/rlist.o)
+add_executable(getstest
+        HWPrograms/forHW3new/HW3demos/getstest.cpp
+        HWPrograms/forHW3new/HW3demos/rlist.o)
+add_executable(copyconsttest
+        HWPrograms/forHW3new/HW3demos/copyconsttest.cpp
+        HWPrograms/forHW3new/HW3demos/rlist.o)
+]]
+#HW3P1_client
+add_executable(HW3P1_client
+        HWPrograms/forHW3new/llist.cpp
+        HWPrograms/forHW3new/llist.h
+        HWPrograms/forHW3new/HW3P1client.cpp)
