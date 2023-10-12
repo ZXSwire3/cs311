@@ -270,7 +270,7 @@ void caseThree() {
     int counter = 1;  // step number
 
     //1. Create a 5 element list with  [1,2,3,4,5] (L1)
-    cout << "Step" << counter << endl;
+    cout << endl << "Step " << counter << ": create 5 element list (L1)" << endl;
     counter++;
     L1.addRear(1);
     L1.addRear(2);
@@ -283,11 +283,11 @@ void caseThree() {
 
     //2. Simply pass L1  to a client function called CopyTest to
     //test your copy constructor.
-    cout << "Step" << counter << endl;
+    cout << endl << "Step " << counter << ": call CopyTest on L1"<< endl;
     counter++;
     CopyTest(L1);
 
-    cout << "-- After copytest --- " << endl;
+    cout << endl << "-- After copytest --- " << endl;
 
     //3. Display L1 (this should still be a 5 element list)
     cout << counter << endl;
@@ -295,21 +295,21 @@ void caseThree() {
     cout << "L1: ";
     L1.displayAll();
 
-    cout << "-- Testing operator overloading ---" << endl;
+    cout << endl << "-- Testing operator overloading ---" << endl;
 
     //4. Do L1 = L1;
-    cout << "Step " << counter << " Gets" << endl;
+    cout << endl << "Step " << counter << ": L1 = L1" << endl;
     counter++;
     L1 = L1;
 
     //5. Display L1    (this should still be 1 2 3 4 5)
-    cout << "Step " << counter << endl;
+    cout << endl << "Step " << counter << ": display L1" << endl;
     counter++;
     cout << "L1: ";
     L1.displayAll();
 
     //6. Create a 4 element list L2 with 7,8,9,10.
-    cout << "Step " << counter << endl;
+    cout << endl << "Step " << counter << ": create 4 element list (L2)" << endl;
     counter++;
     L2.addRear(7);
     L2.addRear(8);
@@ -317,41 +317,41 @@ void caseThree() {
     L2.addRear(10);
 
     //7. Display L2
-    cout << "Step " << counter << endl;
+    cout << endl << "Step " << counter << ": display the L2" << endl;
     counter++;
     cout << "L2: ";
     L2.displayAll();
 
     //8. Do L2 = L1;  (L2 becomes 5 elements 1,2,3,4,5)
-    cout << "Step " << counter << " Gets" << endl;
+    cout << endl << "Step " << counter << ": L2 = L1" << endl;
     counter++;
     L2 = L1;
 
     //9. Display L2.
-    cout << "Step " << counter << endl;
+    cout << endl << "Step " << counter << ": display L2"<< endl;
     counter++;
     cout << "L2: ";
     L2.displayAll();
 
     //10. Remove a rear node from L1. (This should not affect L2).
-    cout << "Step " << counter << endl;
+    cout << endl << "Step " << counter << ": delete rear from L1" << endl;
     counter++;
     L1.deleteRear(x);
 
     //11. Display L1.   (L1 is 1,2,3,4)
-    cout << "Step " << counter << endl;
+    cout << endl << "Step " << counter << ": display L1" << endl;
     counter++;
     cout << "L1 :";
     L1.displayAll();
 
     //12. Display L1 again. (4 elements just to make sure)
-    cout << "Step " << counter << endl;
+    cout << endl << "Step " << counter << ": display L1 again" << endl;
     counter++;
     cout << "L1: ";
     L1.displayAll();
 
     //13. Display L2 again. (still 5 elements 1,2,3,4,5)
-    cout << "Step " << counter << endl;
+    cout << endl << "Step " << counter << ": display L2 again" << endl;
     counter++;
     cout << "L2: ";
     L2.displayAll();
