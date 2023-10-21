@@ -1,0 +1,65 @@
+Script started on Sat 21 Oct 2023 04:01:17 PM PDT
+]0;foltz001@empress:~/cs311/HWPrograms/forHW3new[?1034h[foltz001@empress forHW3new]$ g++ HW3P2client.cpp slist.cpp llist.cpp
+]0;foltz001@empress:~/cs311/HWPrograms/forHW3new[foltz001@empress forHW3new]$ ./a.out 
+calling the llist constructor...
+calling the slist constructor...
+
+Step 1: add 4 to front
+Step 2: add to rear 3 times (6, 7, 8)
+Step 3: displayAll
+[ 4 6 7 8 ]
+
+Step 4: search list for 6
+ - Found 6 in location 2
+
+Step 5: replace 6 with 0
+Step 6: displayAll
+[ 4 0 7 8 ]
+
+Step 7: search list for 8
+ - Found 8 in location 4
+
+Step 8: replace 8 with 2
+Step 9: displayAll
+[ 4 0 7 2 ]
+
+Step 10: search list for 5
+ - Found 5 in location 0
+Step 11: replace position 7 with 10
+ERROR: Bad position was given
+calling the llist destructor...
+
+---- First Part testing done ----- 
+
+calling the llist constructor...
+calling the slist constructor...
+calling the llist constructor...
+calling the slist constructor...
+
+Step 1: check if L1 == L2 (true)
+ - true
+Step 2: add to L2 rear 2 times (4, 5); check if L1 == L2 (false)
+ - false
+Step 3: check if L2 == L1 (false)
+ - false
+Step 4: add to L1 rear 3 times (1, 2, 3);
+ remove L2 front 2 times;
+ add to L2 rear 3 times (1, 2, 3);
+ check if L1 == L2 (true)
+ - true
+Step 5: remove L2 rear 1 time;
+ check if L1 == L2 (false)
+ - false
+Step 6: add to L2 rear 2 times (3, 4);
+ check if L1 == L2 (false)
+ - false
+Step 7: remove L2 rear 2 times;
+ add to L2 rear 1 time (4);
+ check if L1 == L2 (false)
+ - false
+calling the llist destructor...
+calling the llist destructor...
+]0;foltz001@empress:~/cs311/HWPrograms/forHW3new[foltz001@empress forHW3new]$ exit
+exit
+
+Script done on Sat 21 Oct 2023 04:01:52 PM PDT
