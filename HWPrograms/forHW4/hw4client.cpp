@@ -17,28 +17,24 @@ int main() {
     cout << "===  Starting a new tree with many nodes ====" << endl;
     BST MyTree;  // my first binary search tree
 
-    for (int i = 1; i <= 9; i = i + 2)   // inserting 1,3,5,7,9 into the tree
+    for (int i = 1; i <= 9; i = i + 2) { // inserting 1,3,5,7,9 into the tree
         MyTree.InsertVertex(i);
+    }
 
-    for (int i = 10; i >= 2; i = i - 2)  // inserting 10,8,6,4,2 into the tree
+    for (int i = 10; i >= 2; i = i - 2) { // inserting 10,8,6,4,2 into the tree
         MyTree.InsertVertex(i);
+    }
 
     MyTree.Display();  // should show in the sorted order
 
     cout << "Searching .... " << endl;
-    if
-            (MyTree.Search(5))
-        cout << "found 5" << endl;
+    if (MyTree.Search(5)) cout << "found 5" << endl;
     else cout << "5 not found" << endl;
 
-    if
-            (MyTree.Search(11))
-        cout << "found 11" << endl;
+    if (MyTree.Search(11)) cout << "found 11" << endl;
     else cout << "11 not found" << endl;
 
-    if
-            (MyTree.Search(0))
-        cout << "found 0" << endl;
+    if (MyTree.Search(0)) cout << "found 0" << endl;
     else cout << "0 not found" << endl;
 
     char ans;
