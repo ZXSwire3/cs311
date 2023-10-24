@@ -204,7 +204,6 @@ void BST::DeleteVertex(el_t E) {
     while (V != NULL) {
         if (E == V->Elem) { // found it
             cout << "...removing " << V->Elem << endl;
-            //TODO: not sure if it works like this
             remove(V, Parent); // call remove here to remove V
             return;
         } else if (E < V->Elem) {
