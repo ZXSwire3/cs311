@@ -236,7 +236,6 @@ void BST::remove(Vertex *V, Vertex *P) {
             delete V; // delete V and also make Parent's left NULL
             P->Left = NULL;
             // ** EC call here from P to adjust height and BF
-
         } else { // V is a right child of the Parent
             delete V; // delete V and also make Parent's right NULL
             P->Right = NULL;
