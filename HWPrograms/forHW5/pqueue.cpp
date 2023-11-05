@@ -9,6 +9,7 @@
 // =================================================
 
 #include "pqueue.h"
+#include "math.h"
 
 // constructor
 pqueue::pqueue() {
