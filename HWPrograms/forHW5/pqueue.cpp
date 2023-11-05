@@ -169,6 +169,7 @@ int pqueue::getSmallerchild(int i) {
 }
 // NEVER GO TO UNUSED PART OF THE ARRAY 
 
+// Purpose: to print the given number of blanks
 void pqueue::printblanks(int blanks) {
     for (int i = 0; i < blanks; i++) {
         cout << " ";
