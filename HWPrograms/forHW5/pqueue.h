@@ -27,6 +27,7 @@ private:
     void trickleup();    // trickling up after adding at the rear
     int getParent(int);  // return the parent location given the child loc
     bool even(int);      // is the number even?  Needed to find the parent
+    void printblanks(int); // given level, print 2*level blanks
 
 public:
     pqueue();
