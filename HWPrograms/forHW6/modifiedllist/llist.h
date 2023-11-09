@@ -12,7 +12,7 @@
 //=======================================================
 
 // alias el_t : element type definition
-typedef int el_t;  // int for now but can change later
+typedef char el_t;
 
 //a list node is defined here as a struct Node for now
 struct Node {
