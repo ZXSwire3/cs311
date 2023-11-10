@@ -1,0 +1,30 @@
+Enter the file name: table.txt
+** The number of edges is: 12
+  Out Visit Adj
+ -----------------------
+A 2     0 [B F ]
+B 2     0 [C G ]
+C 1     0 [H ]
+D 0     0 [empty]
+E 0     0 [empty]
+F 2     0 [I E ]
+G 0     0 [empty]
+H 2     0 [G I ]
+I 3     0 [A G E ]
+Enter a vertex name or control-C to exit: A
+2 edges comes out to:
+[B F ]
+Enter a vertex name or control-C to exit: B
+2 edges comes out to:
+[C G ]
+Enter a vertex name or control-C to exit: C
+1 edges comes out to:
+[H ]
+Enter a vertex name or control-C to exit: ^C
+foltz001@empress in forHW6 on main
+$ ./hw6.out                                                                                                                                                              exit 130
+Enter the file name: adfasdfa
+** The number of edges is: 0
+  Out Visit Adj
+ -----------------------
+Enter a vertex name or control-C to exit: ^C
