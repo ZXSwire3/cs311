@@ -30,7 +30,6 @@ using namespace std;
 
 // llist constructor
 llist::llist() {
-    cout << "calling the llist constructor..." << endl;
     // initialize Front and Rear to be NULL and Count = 0.
     Front = NULL;
     Rear = NULL;
@@ -39,7 +38,6 @@ llist::llist() {
 
 // llist destructor
 llist::~llist() {
-    cout << "calling the llist destructor..." << endl;
     // while list is not empty delete the front element
     el_t temp; // temp variable to hold the deleted element
     while (!isEmpty()) deleteFront(temp);

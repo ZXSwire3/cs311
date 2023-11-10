@@ -16,9 +16,7 @@ using namespace std;
 // ** Make sure llist constructor and destructors have couts in them
 
 // do not change this one
-slist::slist() {
-    cout << "calling the slist constructor..." << endl;
-}
+slist::slist() {}
 
 // positions always start at 1
 int slist::search(el_t key) {
