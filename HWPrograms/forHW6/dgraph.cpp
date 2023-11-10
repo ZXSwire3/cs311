@@ -17,6 +17,7 @@ using namespace std;
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "stdlib.h"
 #include "dgraph.h"
 
 dgraph::dgraph() {
