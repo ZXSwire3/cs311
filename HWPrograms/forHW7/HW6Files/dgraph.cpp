@@ -98,3 +98,19 @@ slist dgraph::findAdjacency(char V) {// throws exception if not found
     }
     throw BadVertex(); // If the vertex is not found or the index is out of range, throw an exception
 }
+
+void dgraph::visit(int visitNumber, char V) {
+    // does not use a loop - go directly to a slot using V
+    int index = V - 'A'; // Convert the vertex character to an index
+    if (index >= 0 && index < countUsed && Gtable[index].vertexName == V) {
+        Gtable[index].visit = visitNumber;
+    }
+}
+
+bool dgraph::isMarked(char V) {
+    // does not use a loop - go directly to a slot using V
+    int index = V - 'A'; // Convert the vertex character to an index
+    if (index >= 0 && index < countUsed && Gtable[index].vertexName == V) {
+        return Gtable[index].visit != 0;
+    }
+}

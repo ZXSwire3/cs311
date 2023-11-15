@@ -54,6 +54,11 @@ public:
     // returns the adjacency list of a given vertex - may throw BadVertexx
     slist findAdjacency(char);
 
+    // marks a vertex as visited
+    void visit(int, char);
+
+    // checks if a vertex is marked
+    bool isMarked(char);
 };
 
 
