@@ -15,7 +15,7 @@
 
 //----- Globally setting up the aliases ----------------
 
-const int MAX = 10;   // The MAX number of elements for the stack
+const char MAX = 10;   // The MAX number of elements for the stack
                       // MAX is unknown to the client
 
 typedef int el_t;     // the el_t type is int for now
