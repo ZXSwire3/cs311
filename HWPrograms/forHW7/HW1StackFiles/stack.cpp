@@ -84,15 +84,15 @@ void stack::topElem(el_t &elem) {
 //PURPOSE: dislayAll calls isEmpty and if true, displays [ empty ].
 //         Otherwise, diplays the elements vertically.
 void stack::displayAll() {
-    cout << "STACK:---------" << endl;
+    cout << "Stack is:" << endl;
     if (isEmpty()) {
         cout << "[ empty ]" << endl;
     } else {
         for (int i = top; i > -1; i--) {
             cout << el[i] << endl;
         }
-        cout << "--------------" << endl;
     }
+    cout << "-------------------" << endl;
 }
 
 
