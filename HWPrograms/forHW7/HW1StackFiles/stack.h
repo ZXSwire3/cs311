@@ -18,7 +18,7 @@
 const char MAX = 10;   // The MAX number of elements for the stack
                       // MAX is unknown to the client
 
-typedef int el_t;     // the el_t type is int for now
+typedef char el_t;     // the el_t type is int for now
                       // el_t is unknown to the client
 //-------------------------------------------------------
 
