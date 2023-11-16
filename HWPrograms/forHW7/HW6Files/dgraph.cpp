@@ -37,7 +37,7 @@ dgraph::~dgraph() {  // do we have to delete all nodes of slists in table??
 void dgraph::fillTable() { // be sure to read from a specified file
     // you will have to use a linked list function addRear.
     string fname;
-    cout << "Enter a file name: ";
+    cout << "Enter the file name: ";
     cin >> fname;
     ifstream fin(fname.c_str(), ios::in); // declare and open fname
 
