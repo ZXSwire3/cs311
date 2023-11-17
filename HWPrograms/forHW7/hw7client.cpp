@@ -55,7 +55,6 @@ int main() {
                     stack.push(vertex); // push the vertex onto the stack
                 }
             }
-
         } else { //else inform the user E.dgraph. “B had been visited already - backup.”
             cout << vertex << " had been visited already - backup" << endl;
         }
