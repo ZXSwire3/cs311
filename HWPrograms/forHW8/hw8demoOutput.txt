@@ -1,0 +1,247 @@
+What is the input file? (.txt file)input.txt
+0:[empty]
+1:[empty]
+2:[empty]
+3:[empty]
+4:[empty]
+5:[empty]
+6:[empty]
+7:[empty]
+8:[8 a 45 b 82 c ]
+9:[empty]
+10:[empty]
+11:[empty]
+12:[empty]
+13:[empty]
+14:[empty]
+15:[empty]
+16:[empty]
+17:[17 john ]
+18:[empty]
+19:[empty]
+20:[20 mary ]
+21:[empty]
+22:[empty]
+23:[empty]
+24:[empty]
+25:[empty]
+26:[empty]
+27:[empty]
+28:[empty]
+29:[empty]
+30:[empty]
+31:[empty]
+32:[empty]
+33:[33 rika ]
+34:[empty]
+35:[empty]
+36:[empty]
+
+MENU: ----
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+1
+What is the key to add? 8
+What is the name? d
+Added the element in slot 8
+MENU: ----
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+4
+The current contents are:
+0:[empty]
+1:[empty]
+2:[empty]
+3:[empty]
+4:[empty]
+5:[empty]
+6:[empty]
+7:[empty]
+8:[8 a 45 b 82 c 8 d ]
+9:[empty]
+10:[empty]
+11:[empty]
+12:[empty]
+13:[empty]
+14:[empty]
+15:[empty]
+16:[empty]
+17:[17 john ]
+18:[empty]
+19:[empty]
+20:[20 mary ]
+21:[empty]
+22:[empty]
+23:[empty]
+24:[empty]
+25:[empty]
+26:[empty]
+27:[empty]
+28:[empty]
+29:[empty]
+30:[empty]
+31:[empty]
+32:[empty]
+33:[33 rika ]
+34:[empty]
+35:[empty]
+36:[empty]
+MENU: ----
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+2
+What is the key to find? 8
+Found this:
+8 a
+MENU: ----
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+3
+What is the key to find? 8
+Found it and delete it from slot:8
+MENU: ----
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+4
+The current contents are:
+0:[empty]
+1:[empty]
+2:[empty]
+3:[empty]
+4:[empty]
+5:[empty]
+6:[empty]
+7:[empty]
+8:[45 b 82 c 8 d ]
+9:[empty]
+10:[empty]
+11:[empty]
+12:[empty]
+13:[empty]
+14:[empty]
+15:[empty]
+16:[empty]
+17:[17 john ]
+18:[empty]
+19:[empty]
+20:[20 mary ]
+21:[empty]
+22:[empty]
+23:[empty]
+24:[empty]
+25:[empty]
+26:[empty]
+27:[empty]
+28:[empty]
+29:[empty]
+30:[empty]
+31:[empty]
+32:[empty]
+33:[33 rika ]
+34:[empty]
+35:[empty]
+36:[empty]
+MENU: ----
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+2
+What is the key to find? 8
+Found this:
+8 d
+MENU: ----
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+5
+Saved the updated table in newout.txt
+MENU: ----
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+6
+bye
+
+foltz001@empress:cs311/HWPrograms/forHW8  main ✗                                                                                                                       5d0h ⚑ ◒
+▶ ls
+elem.cpp  elem.h  htable.cpp  htable.h  hw8client.cpp  hw8demo.out  input.txt  newout.txt  @@read-me  search2
+
+foltz001@empress:cs311/HWPrograms/forHW8  main ✗                                                                                                                       5d0h ⚑ ◒
+▶ ./hw8demo.out
+What is the input file? (.txt file)newout.txt
+0:[empty]
+1:[empty]
+2:[empty]
+3:[empty]
+4:[empty]
+5:[empty]
+6:[empty]
+7:[empty]
+8:[45 b 82 c 8 d ]
+9:[empty]
+10:[empty]
+11:[empty]
+12:[empty]
+13:[empty]
+14:[empty]
+15:[empty]
+16:[empty]
+17:[17 john ]
+18:[empty]
+19:[empty]
+20:[20 mary ]
+21:[empty]
+22:[empty]
+23:[empty]
+24:[empty]
+25:[empty]
+26:[empty]
+27:[empty]
+28:[empty]
+29:[empty]
+30:[empty]
+31:[empty]
+32:[empty]
+33:[33 rika ]
+34:[empty]
+35:[empty]
+36:[empty]
+
+MENU: ----
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file
+6 Quit
+6
+bye
