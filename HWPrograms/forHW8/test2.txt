@@ -1,0 +1,144 @@
+Script started on Sun 26 Nov 2023 12:11:21 PM PST
+]0;foltz001@empress:~/cs311/HWPrograms/forHW8[?1034h[foltz001@empress forHW8]$ ./a.out 
+This application is used to create a hash table of employee information.
+What is the input file? (.txt file): out.txt
+0:[ empty ]
+1:[ empty ]
+2:[ empty ]
+3:[ empty ]
+4:[ empty ]
+5:[ empty ]
+6:[ empty ]
+7:[ empty ]
+8:[ 8 abe abe@email.com (123)456-7890 82 carl carl@email.com (345)678-9012 ]
+9:[ empty ]
+10:[ empty ]
+11:[ empty ]
+12:[ empty ]
+13:[ empty ]
+14:[ empty ]
+15:[ empty ]
+16:[ empty ]
+17:[ 17 john john@email.com (567)890-1234 ]
+18:[ empty ]
+19:[ empty ]
+20:[ 20 mary mary@email.com (456)789-0123 ]
+21:[ empty ]
+22:[ empty ]
+23:[ empty ]
+24:[ empty ]
+25:[ empty ]
+26:[ empty ]
+27:[ empty ]
+28:[ empty ]
+29:[ empty ]
+30:[ empty ]
+31:[ empty ]
+32:[ empty ]
+33:[ 33 rika ryoshii@csusm.edu (760)750-4121 107 ben ben@email.com (987)654-3210 ]
+34:[ empty ]
+35:[ empty ]
+36:[ empty ]
+
+MENU: ---- 
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file at the end
+6 Quit
+1
+What is the key to add? 57
+What is the name? peter
+What is the email? peter@email.coorg
+What is the phone? (453)827-1274
+Added the element in slot 20
+MENU: ---- 
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file at the end
+6 Quit
+2
+What is the key to find? 57
+Found this:
+57 peter peter@email.org (453)827-1274
+MENU: ---- 
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file at the end
+6 Quit
+3
+What is the key to find and delete? 82
+Found it and deleted it from slot:8
+MENU: ---- 
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file at the end
+6 Quit
+4
+The current contents are: 
+0:[ empty ]
+1:[ empty ]
+2:[ empty ]
+3:[ empty ]
+4:[ empty ]
+5:[ empty ]
+6:[ empty ]
+7:[ empty ]
+8:[ 8 abe abe@email.com (123)456-7890 ]
+9:[ empty ]
+10:[ empty ]
+11:[ empty ]
+12:[ empty ]
+13:[ empty ]
+14:[ empty ]
+15:[ empty ]
+16:[ empty ]
+17:[ 17 john john@email.com (567)890-1234 ]
+18:[ empty ]
+19:[ empty ]
+20:[ 20 mary mary@email.com (456)789-0123 57 peter peter@email.org (453)827-1274 ]
+21:[ empty ]
+22:[ empty ]
+23:[ empty ]
+24:[ empty ]
+25:[ empty ]
+26:[ empty ]
+27:[ empty ]
+28:[ empty ]
+29:[ empty ]
+30:[ empty ]
+31:[ empty ]
+32:[ empty ]
+33:[ 33 rika ryoshii@csusm.edu (760)750-4121 107 ben ben@email.com (987)654-3210 ]
+34:[ empty ]
+35:[ empty ]
+36:[ empty ]
+MENU: ---- 
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file at the end
+6 Quit
+5
+Saved the updated table in newout.txt
+MENU: ---- 
+1 Add an element
+2 Find an element
+3 Delete an element
+4 Display the table
+5 Save the table to a file at the end
+6 Quit
+6
+bye
+]0;foltz001@empress:~/cs311/HWPrograms/forHW8[foltz001@empress forHW8]$ exit
+exit
+
+Script done on Sun 26 Nov 2023 12:14:16 PM PST
