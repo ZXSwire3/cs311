@@ -1,6 +1,7 @@
-33 rika
-20 mary
-17 john
-8  a
-45 b
-82 c
+33 rika ryoshii@csusm.edu (760)750-4121
+20 mary mary@email.com (456)789-0123
+17 john john@email.com (567)890-1234
+8 abe abe@email.com (123)456-7890
+45 bob bob@email.com (234)567-8901
+82 carl carl@email.com (345)678-9012
+
