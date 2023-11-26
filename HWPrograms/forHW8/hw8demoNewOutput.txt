@@ -1,0 +1,7 @@
+6 joe
+8 a
+45 b
+82 c
+17 john
+20 mary
+33 rika

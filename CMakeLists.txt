@@ -10,7 +10,9 @@ set(CMAKE_CXX_STANDARD 11)
 #add_subdirectory(HWPrograms/forHW4)
 #add_subdirectory(HWPrograms/forHW5)
 #add_subdirectory(HWPrograms/forHW6)
-add_subdirectory(HWPrograms/forHW7)
+#add_subdirectory(HWPrograms/forHW7)
+add_subdirectory(HWPrograms/forHW8)
+
 #[[
 #HW1P1_stack
 add_executable(HW1P1_stack_stacktest

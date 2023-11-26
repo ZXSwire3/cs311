@@ -10,15 +10,19 @@
 // blank element
 el_t::el_t() {
     key = -1;  // cannot be 0 because 0 is a valid key
-    ** // initialize other parts to be blanks
+    // initialize other parts to be blanks
+    name = "";
+    email = "";
+    phone = "";
 }
 
 // initializing constructor to create an el_t object 
-el_t::el_t(int akey,
-
-**) {
-key = akey;
-** //  initialize other parts to be the arguments
+el_t::el_t(int akey, string aname, string aemail, string aphone) {
+    key = akey;
+    //  initialize other parts to be the arguments
+    name = aname;
+    email = aemail;
+    phone = aphone;
 }
 
 // ONLY the key part should be available to the user of this class
@@ -42,7 +46,8 @@ bool el_t::operator!=(el_t OtherOne) {
 
 // overload cout 
 ostream &operator<<(ostream &os, const el_t &E) {
-    os << E.key << " " << ** // display other parts of E in a nice way
+//    os << "ID: " << E.key << " Name:" << E.name << " Email: " << E.email << " Phone: " << E.phone;// display other parts of E in a nice way
+    os << E.key << " " << E.name << " " << E.email << " " << E.phone;// display other parts of E in a nice way
     return os;
 }
 // if you make it come out just like the input file, Saving to a file will

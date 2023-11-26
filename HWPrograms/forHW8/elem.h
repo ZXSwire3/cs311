@@ -19,12 +19,13 @@ private:  // these will change depending
     int key;      // key -- for EC, key has to change to string everywhere!!!
     string name;  // customer name
     //** add 2 more pieces of info here
+    string email; // customer email
+    string phone; // customer phone
 
 public:
 
     el_t();  // to create a blank el_t object
-    el_t(int,
-         string); // to create an initialized el_t object - useful for the client   ** add more arguments to create the object
+    el_t(int, string, string, string); // to create an initialized el_t object - useful for the client   ** add more arguments to create the object
 
     // The following functions are available to
     // the htable class to be able to
