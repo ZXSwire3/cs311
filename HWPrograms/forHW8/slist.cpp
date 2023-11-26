@@ -32,6 +32,7 @@ int slist::search(el_t key) {
     return 0; // if the key was not found, return 0
 }
 
+// positions always start at 1
 el_t slist::search2(el_t key) {
     Node *P = Front; // set P to point to the front node
     int pos = 1; // initialize position

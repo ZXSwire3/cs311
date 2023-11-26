@@ -22,7 +22,7 @@ using namespace std;
 #include <fstream>
 #include <string>
 
-//** Add an explanation of what this App should be used for. 
+// App is used to store employee information in a hash table so that it can be easily searched given the employee ID
 int main() {
     // cout an explanation of what this App should be used for.
     cout << "This application is used to create a hash table of employee information." << endl;

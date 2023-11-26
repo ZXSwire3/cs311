@@ -46,8 +46,7 @@ bool el_t::operator!=(el_t OtherOne) {
 
 // overload cout 
 ostream &operator<<(ostream &os, const el_t &E) {
-//    os << "ID: " << E.key << " Name:" << E.name << " Email: " << E.email << " Phone: " << E.phone;// display other parts of E in a nice way
-    os << E.key << " " << E.name << " " << E.email << " " << E.phone;// display other parts of E in a nice way
+    os << E.key << " " << E.name << " " << E.email << " " << E.phone; // display other parts of E in a nice way
     return os;
 }
 // if you make it come out just like the input file, Saving to a file will

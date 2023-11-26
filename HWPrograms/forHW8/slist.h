@@ -30,6 +30,8 @@ public:
     // If so, return its position (>=1). Otherwise, return 0.
 
     el_t search2(el_t);
+    // search through the list to see if any node contains the key.
+    // If so, return the element. Otherwise, return a blank element.
 
     void replace(el_t, int);
     // go to the Ith node (if I is between 1 and Count) and
